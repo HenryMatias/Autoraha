@@ -1,0 +1,177 @@
+.container {
+    max-width: 1800px!important;
+    width: auto;
+}
+
+header {
+    position: relative;
+    background: transparent;
+    padding-top: 57%;
+    height: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    background-image: url('../../images/section1background2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: -12%;
+    @media (max-width: 2050px) {
+        margin-bottom: -9%;
+    }
+    @media (max-width: 1930px) {
+        margin-bottom: -5%;
+    }
+    @media (max-width: 1200px) {
+        margin-bottom: 0%;
+    }
+    @media (max-width: 1090px) {
+        margin-bottom: 5%;
+    }
+    @media (max-width: 680px) {
+        margin-right: 15px;
+        margin-left: 15px;
+        background-position-y: 163px;
+        padding-top: 80%;
+    }
+    @media (max-width: 650px) {
+        background-position-y: 163px;
+        padding-top: 130%;
+        background-position-x: 100%;
+        margin-bottom: 15%;
+        background-size: 191%;
+    }
+    @media (max-width: 500px) {
+        margin-bottom: 20%;
+        padding-top: 140%;
+    }
+    .nav-contact {
+        position: absolute;
+        right: 20px;
+        top: 50px;
+        padding-right: 20px;
+        @media (max-width: 680px) {
+            padding-right: 0px;
+            right: 0;
+        }
+        .contact-information {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 0px;
+            padding-left: 0px;
+            .contact-buttons {
+                    display: flex;
+                    padding: 0 25px;
+                    position: relative;
+                    @media (max-width: 410px) {
+                        padding: 0 20px;
+                    }
+                    @media (max-width: 410px) {
+                        padding-right: 15px;
+                    }
+                i {
+                    color: $pink!important;
+                    position: absolute;
+                    left: 0%;
+                    top: 11%;
+                }
+                li {
+                    font-family: APm;
+                    list-style: none;
+                    font-size: 14px;
+                    color: $purple;
+                    @media (max-width: 470px) {
+                        font-size: 13px;
+                    }
+                }
+                #down_symbol {
+                    position: absolute;
+                    left: 80%!important;
+                    font-size: 13px;
+                    top: 23%;
+                }
+            }
+            .dropdown-menu {
+                a {
+                    color: $purple;
+                    -webkit-transform: skew(0deg);
+                    transform: skew(-10deg);
+                    font-family: APb;
+                    font-size: 13px;
+                    background: transparent;
+                }
+            }
+        }
+    }
+    #nav-desktop {
+        background-color: white!important;
+        background: transparent!important;
+        position: absolute;
+        right: 20px;
+        top: 80px;
+        padding-right: 20px;
+        @media (max-width: 680px) {
+            display: none;
+        }
+        .nav-item {
+            background-color: $navBack;
+            margin: 0 2px 0 2px;
+            transform: skew(-10deg);
+            padding: 0 2px 0 2px;
+            &:hover {
+                background-color: $navActive;
+                .nav-link {
+                    color: $navBack;
+                }
+            }
+            .nav-link {
+                color: $navText;
+                transform: skew(0deg);
+                font-family: APb;
+                font-size: 13px;
+            }
+        }
+        .active {
+            background-color: $navActive;
+            a {
+                color: white!important;
+            }
+        }
+    }
+    #nav-mobile {
+        display: none;
+        @media (max-width: 680px) {
+            background-color: $pink;
+            padding: 10px;
+            display: block;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 80px;
+            z-index: 10;
+            a {
+                margin-left: 15px;
+                font-family: APb;
+                color: white;
+                font-size: 20px;
+            }
+            button {
+                position: absolute;
+                right: 10px;
+                top: 14px;
+                border: none;
+                span {
+                    color: white;
+                }
+            }
+            #navbarSupportedContent1 {
+                ul {
+                    li {
+                        a {
+                            font-family: APm!important;
+                            font-size: 16px!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

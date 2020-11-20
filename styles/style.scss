@@ -1,0 +1,31 @@
+$navText : #5f4a8b;
+$navBack : white;
+$navActive : #fc1792;
+
+$pink : #fc1792;
+$purple : #5f4a8b;
+
+@import './header';
+@import './header-application';
+@import './footer';
+@import './etusivu';
+@import './luottohakemus';
+@import './luottohakemukset';
+
+@font-face {
+    font-family: APm;
+    src: url('../../fonts/ArsonProMedium.otf')
+}
+@font-face {
+    font-family: APb;
+    src: url('../../fonts/Arson\ Pro\ Bold.otf');
+}
+@font-face {
+    font-family: APt;
+    src: url('../../fonts/Arson\ Pro\ Light.otf');
+}
+
+$grid-breakpoints: (
+  md: 800px,
+);
+

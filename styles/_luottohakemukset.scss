@@ -1,0 +1,281 @@
+.container {
+    #application-list {
+        border: 2px groove #5f4a8b !important;
+        border-radius: 10px;
+        overflow: hidden;
+            ul {
+                display: flex!important;
+                justify-content: center!important;
+                padding-left: 0px!important;
+                margin-bottom: 0px!important;
+                background-color: #5f4a8b;
+                height: 55px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                position: relative;
+                li {
+                    list-style-type: none;
+                    button {
+                        border: none;
+                        outline: 0;
+                        background: transparent;
+                        font-size: 20px;
+                        color: white !important;
+                        text-transform: uppercase;
+                        font-family: APm;
+                        width: 35px!important;
+                        height: 35px!important;
+                        letter-spacing: 0;
+                        margin: 0px 0px 0px 0px;
+                    }
+                }
+                .slick-active {
+                    button {
+                        border: 2px solid white;
+                        border-radius: 25px 25px 25px 25px;
+                    }
+                }
+                .previous {
+                    position: absolute;
+                    left: 3%;
+                    width: 30px;
+                    height: 30px;
+                    top: 50%;
+                    margin-top: -12px;
+                    i {
+                        font-size: 30px;
+                        color: white;
+                    }
+                }
+                .next {
+                    position: absolute;
+                    right: 3%;
+                    width: 30px;
+                    height: 30px;
+                    top: 50%;
+                    margin-top: -12px;
+                    i {
+                        font-size: 30px;
+                        color: white;
+                    }
+                }
+            }
+        a {
+            font-size: 14px;
+            color: #5f4a8b !important;
+            text-transform: uppercase;
+            font-family: APm;
+            height: 60px;
+            padding-top: 5px!important;
+            .hakemuksenvaiheet {
+                width: 200px;
+                height: 20px;
+                border:solid 1px black;
+                border-radius: 20px;
+                display: flex;
+                overflow: hidden;
+                margin-top: 3px;
+                background-color: white;
+                div {
+                    width: 40px;
+                    height: 20px;
+                    border-radius: 0px 10px 10px 0px;
+                }
+            }
+            .hakemuksentila {
+                position: absolute;
+                left: 65%;
+                top: 45%;
+            }
+        }
+        a.list-group-item.active {
+            background-color: lightgray;
+            border: none;
+        }
+    }
+    .hakemukseneditointi {
+        border: 2px groove #5f4a8b !important;
+        border-radius: 10px;
+        width: 100%;
+        height: 350px;
+        margin-top: 31px;
+        overflow: hidden;
+        .tab-content {
+            div {
+                .row {
+                    margin: 0px;
+                    .col-2 {
+                        position: relative;
+                        text-align: center;
+                        font-size: 30px;
+                        padding-right: 0px;
+                        a {
+                            height: 87px;
+                            background-color: #5f4a8b;
+                            border-radius: 0px;
+                            position: relative;
+                            i {
+                                position: absolute;
+                                left: 50%;
+                                margin-left: -15px;
+                                top: 50%;
+                                margin-top: -15px;
+                                color: white;
+                            }
+                        }
+                        .active {
+                            background-color: white;
+                            i {
+                                color: #5f4a8b;
+                            }
+                        }
+                    }
+                    .col-10 {
+                        padding-right: 0px;
+                        padding-left: 0px;
+                        .tab-pane {
+                            h3 {
+                                font-family: APm;
+                                font-size: 20px;
+                                color: #5f4a8b;
+                                padding-top: 30px;
+                                padding-left: 40px;
+                                height: 87px;
+                            }
+                            .vaiheenvalinta {
+                                padding: 0px 0px 0px 40px;
+                                label {
+                                    font-size: 14px;
+                                    color: #fc1792 !important;
+                                    text-transform: uppercase;
+                                    font-family: APm;
+                                    position: absolute;
+                                }
+                                select {
+                                    margin-top: 20px;
+                                    width: 390px;
+                                    height: 30px;
+                                }
+                            }
+                            .vaiheenvahvistaja {
+                                padding: 15px 0px 0px 40px;
+                                label {
+                                    font-size: 14px;
+                                    color: #fc1792 !important;
+                                    text-transform: uppercase;
+                                    font-family: APm;
+                                    position: absolute;
+                                }
+                                select {
+                                    margin-top: 20px;
+                                    width: 390px;
+                                    height: 30px;
+                                }
+                            }
+                            button {
+                                margin: 35px 0px 0px 40px;
+                                width: 390px;
+                                border: 2px solid #5f4a8b;
+                                text-transform: uppercase;
+                                font-family: APm;
+                                color: white;
+                                background-color: #5f4a8b;
+                                height: 40px;
+                                border-radius: 5px;
+                            }
+                            .vaihehistoria {
+                                margin-left: 23px;
+                                .date {
+                                    font-size: 14px;
+                                    color: #fc1792 !important;
+                                    text-transform: uppercase;
+                                    font-family: APm;
+                                    margin-bottom: 0px;
+                                }
+                                .data {
+                                    font-size: 14px;
+                                    color: #5f4a8b !important;
+                                    text-transform: uppercase;
+                                    font-family: APm;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hakemuksenmuokkaus {
+        width: 100%;
+        height: 70px;
+        background-color: #5f4a8b;
+        border-bottom: 2px solid #5f4a8b;
+        position: relative;
+        #logo {
+            width: 130px;
+            position: absolute;
+            left: 50%;
+            margin-left: -65px;
+            margin-top: -27px;
+            top: 50%;
+        }
+    }
+    #hakemus {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        #luottohakemuksienotsikot {
+            p {
+                text-align: right;
+                font-family: APm;
+                font-size: 20px;
+                color: #5f4a8b;
+                padding-top: 20px;
+            }
+            p:nth-child(2) {
+                margin-top: 210px;
+            }
+            p:nth-child(3) {
+                margin-top: 215px;
+            }
+        }
+        #luottohakemuksientiedot {
+            border-left: 2px solid lightgrey;
+            padding-top: 20px;
+            .tab-content {
+                .tab-pane {
+                    div {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .input-luottohakemus {
+                            width: 45%!important;
+                            position: relative;
+                            height: 40px;
+                            margin-bottom: 15px;
+                            border-bottom: solid 2px #fc1792;
+                            margin-right: 20px;
+                            label {
+                                position: absolute;
+                                top: -15%;
+                                font-size: 14px;
+                                color: #fc1792 !important;
+                                text-transform: uppercase;
+                                font-family: APm;
+                            }
+                            input {
+                                width: 100%;
+                                height: 40px;
+                                position: absolute;
+                                background: transparent;
+                                border: none;
+                                top: 18%;
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

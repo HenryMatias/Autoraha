@@ -1,0 +1,489 @@
+//Tästä alkaa luottohakemuksen tyylit
+#luotto-body {
+    margin-top: 0px;
+    padding: 0 200px;
+    position: relative;
+}
+
+.luotto_info {
+    max-width: 1300px;
+    margin: 200px auto 120px 0px;
+    position: relative;
+    margin-bottom: 120px;
+    height: 100%;
+    .row {
+        .col-sm-5 {
+            h1 {
+                font-family: APb;
+                color: $purple;
+                font-size: 30px;
+                line-height: 1.2;
+                text-transform: uppercase;
+            }
+            p {
+                font-family: lato;
+                font-weight: 300;
+                letter-spacing: 0.01rem;
+            }
+        }
+        .col-sm-7 {
+            max-height: 350px;
+            width: 100%;
+            padding: 0px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.luotto_container {
+    max-width: 1300px;
+    position: relative;
+    .luotto-information {
+        position: absolute;
+        right: -10%;
+        top: 0%;
+        height: 450px;
+        width: 500px;
+        padding-top: 73px;
+        box-shadow: 10px 0px 9px -7px rgba(252, 23, 146, 0.4);
+        border-right: 2px solid $purple;
+        overflow: hidden;
+        z-index: 1;
+        font-family: lato;
+        font-weight: 300;
+        pointer-events: none;
+        .tool-tip-1 {
+            width: 400px;
+            height: 450px;
+            background-color: white!important;
+            border: 2px solid $purple;
+            position: absolute;
+            right: 0%;
+            transform: translateX(100%);
+            top: 0%;
+            border-radius: 10px 0px 0px 10px;
+            box-shadow: 3px 1px 5px 14px rgba(255,255,255,0);
+            transition: all 0.3s ease;
+            p {
+                font-family: APm;
+                font-size: 18px;
+                color: $purple;
+                text-transform: uppercase;
+                padding-left: 20px;
+                margin-top: 15px;
+            }
+            ul{
+                padding-right: 90px;
+            }
+            img {
+                position: absolute;
+                bottom: 10%;
+                left: 50%;
+                margin-left: -75px;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                width: 80px;
+                height: 60px;
+                background-color: white!important;
+                margin-left: -80px;
+                border-radius: 15px 0px 0px 15px;
+                border: 2px solid $purple;
+                border-right: none;
+                top: 10%;
+                pointer-events: all;
+                i {
+                    color: $purple;
+                    font-size: 30px;
+                }
+            }
+        }
+        .tip1view {
+            transform: translateX(1%);
+            transition: all 0.3s ease;
+            box-shadow: 3px 1px 5px 14px rgba(255,255,255,1);
+            z-index: -1;
+        }
+        .tool-tip-2 {
+            width: 400px;
+            height: 450px;
+            background-color: white!important;
+            border: 2px solid $purple;
+            position: absolute;
+            right: 0%;
+            transform: translateX(100%);
+            top: 0%;
+            border-radius: 10px 0px 0px 10px;
+            box-shadow: 3px 1px 5px 14px rgba(255,255,255,0);
+            transition: all 0.3s ease;
+            p {
+                font-family: APm;
+                font-size: 18px;
+                color: $purple;
+                text-transform: uppercase;
+                padding-left: 20px;
+                margin-top: 15px;
+            }
+            ul{
+                padding-right: 90px;
+            }
+            img {
+                position: absolute;
+                bottom: 3%;
+                left: 50%;
+                margin-left: -75px;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                width: 80px;
+                height: 60px;
+                background-color: white!important;
+                margin-left: -80px;
+                border-radius: 15px 0px 0px 15px;
+                border: 2px solid $purple;
+                border-right: none;
+                top: 25%;
+                pointer-events: all;
+                i {
+                    color: $purple;
+                    font-size: 30px;
+                }
+            }
+        }
+        .tip2view {
+            transform: translateX(1%);
+            transition: all 0.3s ease;
+            box-shadow: 3px 1px 5px 14px rgba(255,255,255,1);
+            z-index: -1;
+        }
+        .tool-tip-3 {
+            width: 400px;
+            height: 450px;
+            background-color: white!important;
+            border: 2px solid $purple;
+            position: absolute;
+            right: 0%;
+            transform: translateX(100%);
+            top: 0%;
+            border-radius: 10px 0px 0px 10px;
+            box-shadow: 3px 1px 5px 14px rgba(255,255,255,0);
+            transition: all 0.3s ease;
+            p {
+                font-family: APm;
+                font-size: 18px;
+                color: $purple;
+                text-transform: uppercase;
+                padding-left: 20px;
+                margin-top: 15px;
+            }
+            ul{
+                padding-right: 70px;
+            }
+            img {
+                position: absolute;
+                bottom: 10%;
+                left: 50%;
+                margin-left: -75px;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                width: 80px;
+                height: 60px;
+                background-color: white!important;
+                margin-left: -80px;
+                border-radius: 15px 0px 0px 15px;
+                border: 2px solid $purple;
+                border-right: none;
+                top: 40%;
+                pointer-events: all;
+                i {
+                    color: $purple;
+                    font-size: 30px;
+                }
+            }
+        }
+        .tip3view {
+            transform: translateX(1%);
+            transition: all 0.3s ease;
+            box-shadow: 3px 1px 5px 14px rgba(255,255,255,1);
+            z-index: -1;
+        }
+    }
+    fieldset {
+        border: 2px groove $purple !important;
+        padding: 40px 40px 40px 40px !important;
+        margin: 80px 0 1.5em 0 !important;
+        box-shadow: -1px 2px 6px 6px rgba(252,23,146,0.2);
+        border-radius: 20px;
+        legend {
+            font-family: APm;
+            font-size: 20px;
+            color: $purple;
+            text-align: left !important;
+            width:auto;
+            padding:0 10px;
+            border-bottom:none;
+            background-color: white;
+            text-transform: uppercase;
+        }
+        .inputarea {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            .text-inputs {
+                position: relative;
+                height: 55px;
+                overflow: hidden;
+                margin-bottom: 20px;
+                margin-left: 10px;
+                input {
+                    width: 100%;
+                    height: 100%;
+                    color: black;
+                    padding-top: 10px;
+                    border: none;
+                    outline: none;
+                    &:focus + .label-name .content-name,
+                    &:valid + .label-name .content-name {
+                        transform: translateY(-100%);
+                        font-size: 14px;
+                        color: $pink!important;
+                    }
+                    &:focus + .label-name::after,
+                    &:valid + .label-name::after {
+                        transform: translateX(0%);
+                    }
+                }
+                select {
+                    width: 100%;
+                    height: 100%;
+                    color: black;
+                    padding-top: 10px;
+                    border: none;
+                    outline: none;
+                    &:focus + .label-name .content-name,
+                    &:valid + .label-name .content-name {
+                        transform: translateY(-100%);
+                        font-size: 14px;
+                        color: $pink!important;
+                    }
+                    &:focus + .label-name::after,
+                    &:valid + .label-name::after {
+                        transform: translateX(0%);
+                    }
+                }
+
+                label {
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0%;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    border-bottom: 1px solid black;
+                    &::after {
+                        content:"";
+                        position: absolute;
+                        left: 0px;
+                        bottom: -1px;
+                        height: 100%;
+                        width: 100%;
+                        border-bottom: 3px solid $pink;
+                        transform: translateX(-100%);
+                        transition: all 0.3s ease;
+                    }
+                    .content-name {
+                        position: absolute;
+                        bottom: 5px;
+                        color: $purple!important;
+                        left: 0px;
+                        transition: all 0.3s ease;
+                        text-transform: uppercase;
+                        font-family: APm;
+                    }
+                }
+            }
+        }
+        #rahoitusinputarea {
+            display: grid;
+            grid-template-columns: 33% 33% 1fr;
+            .text-inputs {
+                position: relative;
+                height: 55px;
+                overflow: hidden;
+                margin-bottom: 20px;
+                margin-left: 10px;
+                input {
+                    width: 100%;
+                    height: 100%;
+                    color: black;
+                    padding-top: 10px;
+                    border: none;
+                    outline: none;
+                    &:focus + .label-name .content-name,
+                    &:valid + .label-name .content-name {
+                        transform: translateY(-100%);
+                        font-size: 14px;
+                        color: $pink!important;
+                    }
+                    &:focus + .label-name::after,
+                    &:valid + .label-name::after {
+                        transform: translateX(0%);
+                    }
+                }
+                #vaikutus {
+                    padding-top: 50px!important;
+                }
+                #kunnossapitoturva {
+                    padding-top: 50px!important;
+                    &:focus + .label-name .content-name,
+                    &:valid + .label-name .content-name {
+                        transform: translateY(-180%);
+                    }
+                }
+                select {
+                    width: 100%;
+                    height: 100%;
+                    color: black;
+                    padding-top: 10px;
+                    border: none;
+                    outline: none;
+                    &:focus + .label-name .content-name,
+                    &:valid + .label-name .content-name {
+                        transform: translateY(-100%);
+                        font-size: 14px;
+                        color: $pink!important;
+                    }
+                    &:focus + .label-name::after,
+                    &:valid + .label-name::after {
+                        transform: translateX(0%);
+                    }
+                }
+
+                label {
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0%;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    border-bottom: 1px solid black;
+                    &::after {
+                        content:"";
+                        position: absolute;
+                        left: 0px;
+                        bottom: -1px;
+                        height: 100%;
+                        width: 100%;
+                        border-bottom: 3px solid $pink;
+                        transform: translateX(-100%);
+                        transition: all 0.3s ease;
+                    }
+                    .content-name {
+                        position: absolute;
+                        bottom: 5px;
+                        color: $purple!important;
+                        left: 0px;
+                        transition: all 0.3s ease;
+                        text-transform: uppercase;
+                        font-family: APm;
+                    }
+                }
+            }
+            div:nth-child(4) {
+                grid-column: 1 / 4;
+                height: 100px;
+            }
+            div:nth-child(5) {
+                grid-column: 1 / 4;
+                height: 100px;
+            }
+        }
+    }
+}
+.hyvaksyminen {
+    max-height: 300px;
+    margin: 100px 0px;
+    position: relative;
+    .row {
+        max-height: 300px;
+        .col-sm-5 {
+            img {
+                width: auto;
+                max-height: 300px;
+            }
+        }
+        .col-sm-7 {
+            padding-top: 30px;
+            .checkboxes {
+                position: relative;
+                margin-bottom: 13px;
+                input {
+                    transform: scale(1.2);
+                    position: absolute;
+                    top: 20%;
+                    left: -4%;
+                }
+                label {
+                    font-family: lato;
+                    font-weight: 300;
+                    letter-spacing: 0.01rem;
+                    font-size: 16px;
+                    margin: 0;
+                }
+                a {
+                    color: $pink;
+                }
+            }
+            .sendform {
+                margin-top: 50px;
+                button {
+                    width: 300px;
+                    height: 45px;
+                    border: 2px solid $purple;
+                    text-transform: uppercase;
+                    font-family: APm;
+                    color: $purple;
+                    background-color: white;
+                    border-radius: 10px 10px 10px 10px;
+                    overflow: hidden;
+                    position: relative;
+                    padding: 0;
+                    padding-right: 47px;
+                    i {
+                        color: white;
+                        background-color: $purple;
+                        position: absolute;
+                        right: 0%;
+                        font-size: 20px;
+                        line-height: 45px;
+                        top: 0%;
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
